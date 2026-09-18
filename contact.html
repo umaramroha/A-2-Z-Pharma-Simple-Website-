@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A2Z Pharma | Contact</title>
+    <title>A2Z Pharma | Contact Us</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">A2Z<span style="color:#333">Pharma</span>.</div>
         <div class="search-wrapper">
@@ -25,26 +26,70 @@
         </ul>
     </nav>
 
+    <!-- Contact Section -->
     <section class="page-content">
-        <h1>Contact Us</h1>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
-            <div>
-                <h3>Get in Touch</h3>
-                <p style="margin-bottom: 10px;"><i class="fas fa-map-marker-alt" style="color:var(--primary)"></i> Shop No. 12, Main Market, Amroha, UP</p>
-                <p style="margin-bottom: 10px;"><i class="fas fa-phone" style="color:var(--primary)"></i> +91 84101 27168</p>
-                <p><i class="fab fa-whatsapp" style="color:var(--primary)"></i> +91 84101 27168</p>
+        <h1>Get in Touch</h1>
+        <p style="text-align: center; color: #666; margin-bottom: 3rem;">Have questions about our products? Chat with us directly on WhatsApp for instant support!</p>
+        
+        <div class="contact-container" style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+            
+            <!-- WhatsApp Card -->
+            <div class="product-card" style="max-width: 400px; text-align: center; padding: 40px;">
+                <div style="font-size: 4rem; color: #25D366; margin-bottom: 20px;">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <h3 style="margin-bottom: 10px;">WhatsApp Support</h3>
+                <p style="color: #666; margin-bottom: 25px;">Click below to start a chat with A2Z Pharma.</p>
+                
+                <a href="https://wa.me/918410127168?text=Hi%20A2Z%20Pharma,%20I%20have%20a%20query." 
+                   class="btn-buy" 
+                   style="background: #25D366; font-size: 1.1rem;">
+                   <i class="fab fa-whatsapp"></i> Start Chat
+                </a>
             </div>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="text" placeholder="Phone Number" required>
-                <textarea rows="4" placeholder="Your Message or Order Details"></textarea>
-                <button type="submit" class="btn-buy" style="border:none; cursor:pointer;">Send Message</button>
-            </form>
+
+            <!-- Call Card -->
+            <div class="product-card" style="max-width: 400px; text-align: center; padding: 40px;">
+                <div style="font-size: 4rem; color: var(--primary); margin-bottom: 20px;">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h3 style="margin-bottom: 10px;">Call Us</h3>
+                <p style="color: #666; margin-bottom: 25px;">Prefer to talk? Give us a call directly.</p>
+                
+                <a href="tel:+918410127168" 
+                   class="btn-buy" 
+                   style="background: var(--primary); font-size: 1.1rem;">
+                   <i class="fas fa-phone"></i> +91 84101 27168
+                </a>
+            </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 4rem; padding: 2rem; background: #f8f9fa; border-radius: 12px;">
+            <h3>📍 Visit Our Store</h3>
+            <p style="margin-top: 10px; color: #555;">Shop No. 12, Main Market, Amroha, Uttar Pradesh</p>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>A2Z Pharma</h4>
+                <p>Your trusted local pharmacy for authentic Ayurvedic medicines.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Health Journal</a></li>
+                </ul>
+            </div>
+        </div>
         <div class="copyright">© 2026 A2Z Pharma. All Rights Reserved.</div>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
